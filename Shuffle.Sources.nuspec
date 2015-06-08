@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+    <metadata>
+        <id>Shuffle.Sources</id>
+        <version>0.1.2</version>
+        <authors>Andreas Torebring</authors>
+        <description>Fisher-Yates shuffle algorithm.</description>
+        <releaseNotes>First release</releaseNotes>
+        <copyright>Free</copyright>
+		<developmentDependency>true</developmentDependency>
+    </metadata>
+    <files>
+        <file src="content\shuffle\*.cs" target="content\**" />
+    </files>
+</package>
