@@ -4,12 +4,12 @@
         <id>Shuffle.Sources</id>
         <version>0.1.2</version>
         <authors>Andreas Torebring</authors>
-        <description>Fisher-Yates shuffle algorithm.</description>
-        <releaseNotes>First release</releaseNotes>
+        <description>Fisher-Yates shuffle source code</description>
+        <releaseNotes>Moved code into shuffle folder</releaseNotes>
         <copyright>Free</copyright>
 		<developmentDependency>true</developmentDependency>
     </metadata>
     <files>
-        <file src="content\shuffle\*.cs" target="content\**" />
+        <file src="content\shuffle\*.cs" target="content\shuffle" />
     </files>
 </package>
