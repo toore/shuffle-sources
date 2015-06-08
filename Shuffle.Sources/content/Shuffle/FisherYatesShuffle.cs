@@ -1,21 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace Shuffle.Sources
+namespace Shuffle.Sources.content.Shuffle
 {
     public class FisherYatesShuffle : IShuffle
     {
-        private readonly Random _random;
+        private readonly IRandomWrapper _random;
 
-        public FisherYatesShuffle(Random random)
+        public FisherYatesShuffle(IRandomWrapper random)
         {
             _random = random;
         }
 
-        public IEnumerable<T> Shuffle<T>(IEnumerable<T> items)
+        public IEnumerable<T> Shuffle<T>(IEnumerable<T> elements)
         {
-            var a = items.ToList();
+            var a = elements.ToList();
             var n = a.Count;
 
             for (var i = 0; i < n - 1; i++)

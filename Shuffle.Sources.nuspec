@@ -2,14 +2,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>Shuffle.Sources</id>
-        <version>0.1.2</version>
+        <version>0.1.3</version>
         <authors>Andreas Torebring</authors>
         <description>Fisher-Yates shuffle source code</description>
-        <releaseNotes>Moved code into shuffle folder</releaseNotes>
+        <releaseNotes>Added wrapper for Random</releaseNotes>
         <copyright>Free</copyright>
 		<developmentDependency>true</developmentDependency>
     </metadata>
     <files>
-        <file src="content\shuffle\*.cs" target="content\shuffle" />
+        <file src="Shuffle.Sources\content\shuffle\*.cs" target="content\shuffle" />
     </files>
 </package>
