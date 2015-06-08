@@ -6,7 +6,7 @@
         <authors>Andreas Torebring</authors>
         <description>Fisher-Yates shuffle source code</description>
         <releaseNotes>Added wrapper for Random</releaseNotes>
-        <copyright>Free</copyright>
+        <licenseUrl>https://github.com/toore/shuffle-sources/LICENSE.md</licenseUrl>
 		<developmentDependency>true</developmentDependency>
     </metadata>
     <files>
