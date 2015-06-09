@@ -5,7 +5,7 @@
         <version>0.1.4</version>
         <authors>Andreas Torebring</authors>
         <description>Fisher-Yates shuffle source code</description>
-        <releaseNotes>Added wrapper for Random</releaseNotes>
+        <releaseNotes>Removed unused RandomWrapper signature</releaseNotes>
         <licenseUrl>https://github.com/toore/shuffle-sources/LICENSE.md</licenseUrl>
 		<developmentDependency>true</developmentDependency>
     </metadata>
