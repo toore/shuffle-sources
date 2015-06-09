@@ -1,4 +1,4 @@
-﻿namespace Shuffle.Sources.content.Shuffle
+﻿namespace Toore.Shuffling
 {
     public interface IRandomWrapper
     {

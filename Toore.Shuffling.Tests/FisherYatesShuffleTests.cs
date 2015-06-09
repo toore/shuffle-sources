@@ -2,10 +2,9 @@
 using System.Linq;
 using FluentAssertions;
 using NSubstitute;
-using Shuffle.Sources.content.Shuffle;
 using Xunit;
 
-namespace Shuffle.Tests
+namespace Toore.Shuffling.Tests
 {
     public class FisherYatesShuffleTests
     {
@@ -23,8 +22,8 @@ namespace Shuffle.Tests
         public void Shuffles_three_elements()
         {
             IEnumerable<object> elements = new object[] { "first", "second", "third" };
-            _randomWrapper.Next(0, 3).Returns(2); // swap first with third  3 2 1
-            _randomWrapper.Next(1, 3).Returns(0); // swap second with first 2 3 1
+            _randomWrapper.Next(0, 3).Returns(2); // swap first with third
+            _randomWrapper.Next(1, 3).Returns(0); // swap second with first
 
             var orderedSequence = elements.Shuffle(_fisherYates).ToList();
 

@@ -8,8 +8,8 @@
     <ProjectGuid>{363FC0F3-E0A1-451D-BDD0-E56B9774642F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Shuffle.Tests</RootNamespace>
-    <AssemblyName>Shuffle.Tests</AssemblyName>
+    <RootNamespace>Toore.Shuffling.Tests</RootNamespace>
+    <AssemblyName>Toore.Shuffling.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <NuGetPackageImportStamp>
@@ -74,9 +74,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Shuffle.Sources\Shuffle.Sources.csproj">
-      <Project>{e3b2f0b4-0bd5-4657-87ce-fecd227d578a}</Project>
-      <Name>Shuffle.Sources</Name>
+    <ProjectReference Include="..\Toore.Shuffling\Toore.Shuffling.csproj">
+      <Project>{E3B2F0B4-0BD5-4657-87CE-FECD227D578A}</Project>
+      <Name>Toore.Shuffling</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
