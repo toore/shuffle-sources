@@ -6,16 +6,16 @@ using Xunit;
 
 namespace Toore.Shuffling.Tests
 {
-    public class FisherYatesShuffleTests
+    public class FisherYatesShufflerTests
     {
         private readonly IRandomWrapper _randomWrapper;
-        private readonly FisherYatesShuffle _fisherYates;
+        private readonly FisherYatesShuffler _fisherYatesShuffler;
 
-        public FisherYatesShuffleTests()
+        public FisherYatesShufflerTests()
         {
             _randomWrapper = Substitute.For<IRandomWrapper>();
 
-            _fisherYates = new FisherYatesShuffle(_randomWrapper);
+            _fisherYatesShuffler = new FisherYatesShuffler(_randomWrapper);
         }
 
         [Fact]
@@ -25,7 +25,7 @@ namespace Toore.Shuffling.Tests
             _randomWrapper.Next(0, 3).Returns(2); // swap first with third
             _randomWrapper.Next(1, 3).Returns(0); // swap second with first
 
-            var orderedSequence = elements.Shuffle(_fisherYates).ToList();
+            var orderedSequence = elements.Shuffle(_fisherYatesShuffler).ToList();
 
             orderedSequence.First().Should().Be("second");
             orderedSequence.ElementAt(1).Should().Be("third");

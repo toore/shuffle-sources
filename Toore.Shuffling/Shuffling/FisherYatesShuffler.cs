@@ -3,11 +3,11 @@ using System.Linq;
 
 namespace Toore.Shuffling
 {
-    public class FisherYatesShuffle : IShuffler
+    public class FisherYatesShuffler : IShuffler
     {
         private readonly IRandomWrapper _random;
 
-        public FisherYatesShuffle(IRandomWrapper random)
+        public FisherYatesShuffler(IRandomWrapper random)
         {
             _random = random;
         }
