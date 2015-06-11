@@ -2,7 +2,7 @@
 
 namespace Toore.Shuffling
 {
-    public interface IShuffle
+    public interface IShuffler
     {
         IEnumerable<T> Shuffle<T>(IEnumerable<T> elements);
     }
