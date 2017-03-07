@@ -4,10 +4,9 @@ namespace Toore.Shuffling
 {
     public static class ShuffleExtensions
     {
-        public static IEnumerable<T> Shuffle<T>(this IEnumerable<T> elements, IShuffler shuffler)
+        public static List<T> Shuffle<T>(this IEnumerable<T> elements, IShuffler shuffler)
         {
-            var shuffledSet = shuffler.Shuffle(elements);
-            return shuffledSet;
+            return shuffler.Shuffle(elements);
         }
     }
 }

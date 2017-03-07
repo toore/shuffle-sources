@@ -4,6 +4,6 @@ namespace Toore.Shuffling
 {
     public interface IShuffler
     {
-        IEnumerable<T> Shuffle<T>(IEnumerable<T> elements);
+        List<T> Shuffle<T>(IEnumerable<T> elements);
     }
 }
