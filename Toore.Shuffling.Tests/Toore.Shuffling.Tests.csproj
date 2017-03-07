@@ -73,13 +73,13 @@
     <Compile Include="FisherYatesShufflerTests.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Toore.Shuffling\Toore.Shuffling.csproj">
-      <Project>{E3B2F0B4-0BD5-4657-87CE-FECD227D578A}</Project>
-      <Name>Toore.Shuffling</Name>
-    </ProjectReference>
+    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <ProjectReference Include="..\Toore.Shuffling\Toore.Shuffling.csproj">
+      <Project>{63aebf1a-4533-4420-ba40-a1783be8eb4d}</Project>
+      <Name>Toore.Shuffling</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
