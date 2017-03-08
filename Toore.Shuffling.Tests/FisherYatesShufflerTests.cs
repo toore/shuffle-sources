@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Linq;
+﻿using System.Linq;
 using FluentAssertions;
 using NSubstitute;
 using Xunit;
@@ -9,27 +8,37 @@ namespace Toore.Shuffling.Tests
     public class FisherYatesShufflerTests
     {
         private readonly IRandomWrapper _randomWrapper;
-        private readonly FisherYatesShuffler _fisherYatesShuffler;
+        private readonly FisherYatesShuffler _sut;
 
         public FisherYatesShufflerTests()
         {
             _randomWrapper = Substitute.For<IRandomWrapper>();
 
-            _fisherYatesShuffler = new FisherYatesShuffler(_randomWrapper);
+            _sut = new FisherYatesShuffler(_randomWrapper);
         }
 
         [Fact]
         public void Shuffles_three_elements()
         {
-            IEnumerable<object> elements = new object[] { "first", "second", "third" };
-            _randomWrapper.Next(0, 3).Returns(2); // swap first with third
-            _randomWrapper.Next(1, 3).Returns(0); // swap second with first
+            var elements = new object[] { "first", "second", "third" };
+            SwapFirstWithThird();
+            SwapSecondWithFirst();
 
-            var orderedSequence = elements.Shuffle(_fisherYatesShuffler).ToList();
+            var orderedSequence = elements.Shuffle(_sut).ToList();
 
             orderedSequence.First().Should().Be("second");
             orderedSequence.ElementAt(1).Should().Be("third");
             orderedSequence.ElementAt(2).Should().Be("first");
+        }
+
+        private void SwapSecondWithFirst()
+        {
+            _randomWrapper.Next(1, 3).Returns(0);
+        }
+
+        private void SwapFirstWithThird()
+        {
+            _randomWrapper.Next(0, 3).Returns(2);
         }
     }
 }
