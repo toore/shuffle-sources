@@ -14,7 +14,7 @@
 		
 		<!-- Version 3.3+ with project.json only (https://docs.microsoft.com/en-us/nuget/schema/nuspec#including-content-files) -->
 		<contentFiles>
-			<files include="Toore.Shuffling\Shuffling\*.cs" buildAction="Content" />
+			<files include="Toore.Shuffling\Shuffling\*.cs" />
 		</contentFiles>
 		
     </metadata>
