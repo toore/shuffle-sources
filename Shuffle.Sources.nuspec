@@ -2,10 +2,12 @@
 <package>
     <metadata>
         <id>Shuffle.Sources</id>
-        <version>0.2.0</version>
+        <version>0.2.1</version>
         <authors>Andreas Torebring</authors>
         <description>Fisher-Yates shuffle source code</description>
         <releaseNotes>
+			0.2.1 2018-03-03
+			Added nuget NETStandard 1.2 dependency.
 			0.2.0 2017-03-08
 			Changed the result type from IEnumerable to List.
 		</releaseNotes>
