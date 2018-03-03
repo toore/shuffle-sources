@@ -11,17 +11,21 @@
 		</releaseNotes>
         <licenseUrl>https://github.com/toore/shuffle-sources/LICENSE.md</licenseUrl>
 		<developmentDependency>true</developmentDependency>
-		
+		<dependencies>
+			<group targetFramework=".NETStandard1.0">
+				<dependency id="NETStandard.Library" version="1.2.0" />
+			</group>
+		</dependencies>
+		<tags>contentv2 contentFiles</tags>
 		<!-- Version 3.3+ with project.json only (https://docs.microsoft.com/en-us/nuget/schema/nuspec#including-content-files) -->
-		<contentFiles>
-			<files include="Toore.Shuffling\Shuffling\*.cs" />
-		</contentFiles>
+		<!-- <contentFiles> -->
+			<!-- <files include="**/Shuffling/*.cs" buildAction="Content" /> -->
+		<!-- </contentFiles> -->
 		
     </metadata>
     
-	<!-- Basic content files -->
 	<files>
-        <file src="Toore.Shuffling\Shuffling\*.cs" target="content\Shuffling" />
+        <file src="Toore.Shuffling\Shuffling\*.cs" target="contentFiles\cs\netstandard1.0\Shuffling\" />
     </files>
 	
 </package>
