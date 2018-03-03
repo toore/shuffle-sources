@@ -31,3 +31,4 @@ _ReSharper*/
 *.ods#
 .vs
 *.mdb
+/nuget-key.txt
