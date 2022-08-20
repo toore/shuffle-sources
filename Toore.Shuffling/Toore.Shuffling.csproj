@@ -1,7 +1,29 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net6</TargetFramework>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net6</TargetFramework>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<PackageId>Shuffle.Sources</PackageId>
+		<Authors>Andreas Torebring</Authors>
+		<PackageProjectUrl></PackageProjectUrl>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<RepositoryUrl>https://github.com/toore/shuffle-sources</RepositoryUrl>
+		<PackageReleaseNotes>1.0.0 2022-08-20
+Updated target to net6.
+
+0.2.1 2018-03-03
+Added nuget NETStandard 1.2 dependency.
+
+0.2.0 2017-03-08
+Changed the result type from IEnumerable to List.		</PackageReleaseNotes>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="..\README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+	</ItemGroup>
 
 </Project>
